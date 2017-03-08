@@ -10,10 +10,10 @@ import java.util.logging.Logger;
 /**
  * Created by marcin on 06.03.17.
  */
-@MessageDriven(mappedName = "jms/OTFDataSourceConnectionFactory")
+@MessageDriven(mappedName = "jms/OTFDataProviderTopic")
 public class BinaryThresholdAnalyzer extends AbstractBaseAnalyzer {
 
-    protected Double threshold = 5.0;
+    protected Double threshold = 150.0;
 
     public void analyze(StockReport stockReport) {
 
